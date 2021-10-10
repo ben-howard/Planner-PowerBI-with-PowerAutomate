@@ -27,12 +27,11 @@ The following outlines the deployment and configuration process to deploying the
 
 Power Automate queries every Team in turn and returns the Planner plans associated with the Team; therefore if no Team exists for a Plan then a Team must be created and associated with the existing Office365 group that was created as part of the Plan creation. If a team already exists, and the Plan is being created, associate the Plan with the relevant team. The PDF version of this document contains relevant images.
 
-![](RackMultipart20211010-4-1d0sggf_html_4f67f8762bc72a87.png)
+![2021-10-10_20-27-16](https://user-images.githubusercontent.com/37085234/136714533-f194727f-a55a-4d4a-969a-7233b7afabe3.png)
 
 _Figure 1 - Create a Team and associate it with the existing Group created when the Planner Plan was created_
 
-![](RackMultipart20211010-4-1d0sggf_html_ce34be96f9a76d27.png)
-
+![2021-10-10_20-20-25](https://user-images.githubusercontent.com/37085234/136714433-caa51832-131f-4711-888c-16ed78ade5ab.png)
 _Figure 2 - Create a new Plan against and existing Group_
 
 ### Store the Excel file in a SharePoint folder.
