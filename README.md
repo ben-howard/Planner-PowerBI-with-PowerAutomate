@@ -78,9 +78,12 @@ Once the Flow has been imported, edit the Flow so that each section points to th
 | File | A drop down list. Choose the filename, eg _/Planner tasks from flow.xlsx_ |
 | Table | The relevant table for the section. eg _Task\_tbl, Plan\_tbl etc_ |
 
+The following image gives and example of the UI in Flow for configurating the Excel details.
 ![2021-10-10_23-14-01](https://user-images.githubusercontent.com/37085234/136714595-c41e6c6b-154f-45a7-a754-eebe1f7e587a.png)
 
 _Figure 3 - Update the details for the Excel file_
+
+Note that the specific details for matching fields for each entity in Planner to the relevant columns in each table do not have to be configured, and indeed more columns exist in the tables than are actually configured.  
 
 ### Configure the .pbit file
 
