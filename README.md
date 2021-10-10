@@ -78,6 +78,7 @@ Once the Flow has been imported, edit the Flow so that each section points to th
 | File | A drop down list. Choose the filename, eg _/Planner tasks from flow.xlsx_ |
 | Table | The relevant table for the section. eg _Task\_tbl, Plan\_tbl etc_ |
 
+
 The following image gives and example of the UI in Flow for configurating the Excel details.
 ![2021-10-10_23-14-01](https://user-images.githubusercontent.com/37085234/136714595-c41e6c6b-154f-45a7-a754-eebe1f7e587a.png)
 
@@ -89,6 +90,6 @@ Note that the specific details for matching fields for each entity in Planner to
 
 Open the .pbit file and enter the web URL of the Excel file. This can be found by opening the Excel file from the SharePoint site in the desktop app (ie in Excel) and clicking on File and then Info. Click on the button that says Copy Path and then paste in into the ExcelFileWebURL parameter when the Power BI template loads. Remove the ?web=1 from the end of the URL, leaving you with a URL in the following format
 
-https://\&lt;tenantname\&gt;/\&lt;sitename\&gt;/\&lt;folername\&gt;/\&lt;filename\&gt;.xlsx
+https://tenantname/sitename/foldername/filename.xlsx
 
 Publish the Power BI file and then set up a scheduled refresh on the dataset. My recommendation is to set this to run two hours after the schedule for the Power Automate Flow, especially if you have a large number of tasks.  The default time for the Flow is 11:00pm, so I recommend setting the Power BI Scheduled Refresh to 1:00am.
