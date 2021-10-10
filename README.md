@@ -45,8 +45,9 @@ Open Power Automate and import the Flow package. The flow is a cloud flow that i
 
 You will need to ensure you configure and select connections for the following resource types.
 
-| Microsoft Teams Connection |
+| **Connection Name** |
 | --- |
+| Microsoft Teams Connection |
 | Excel Online (Business) Connection |
 | Planner Connection |
 | Office 365 Groups Connection |
