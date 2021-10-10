@@ -69,7 +69,7 @@ Each table is updated as part of the Flow. The following steps are applied in ea
 2. A list of Plans is retrieved for each group associated with each team in Microsoft Teams
 3. The relevant data for each plan is written into the relevant table, with the exception of the User\_tbl which lists the group members for each group, and therefore does not query Planner at all.
 
-Once the Flow has been imported, edit the Flow so that each section points to the location where the Excel file is located in SharePoint. Note that this needs to be done at least twice for each section, once to select the table to remove rows from, and once to select the table to add rows to. Specifically the following items need to be set.
+Once the Flow has been imported, edit the Flow so that each section points to the location where the Excel file is located in SharePoint. Note that this needs to be done at least three times for each section, one to list all the rows in the table, once to remove the rows from the table, and once to add rows to the table. Specifically the following items need to be set.
 
 | **Entity** | **Description** |
 | --- | --- |
