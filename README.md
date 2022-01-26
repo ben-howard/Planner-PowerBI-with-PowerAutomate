@@ -53,7 +53,7 @@ You will need to ensure you configure and select connections for the following r
 
 ### Update the flow to point to the SharePoint document library
 
-The Flow has 5 major sections to it. They comprise of sections to update the following tables in the Excel file, and each section is broadly similar.
+The Flow has 6 major sections to it. They comprise of sections to update the following tables in the Excel file, and each section is broadly similar.
 
 | **Table Name** | **Description** |
 | --- | --- |
@@ -62,6 +62,7 @@ The Flow has 5 major sections to it. They comprise of sections to update the fol
 | Task\_tbl | Holds the Task Id, Plan Id, Bucket Id and many other task fields |
 | Assignments\_tbl | Holds the Task Id, Plan Id and UserAssignmentId |
 | User\_tbl | Holds the User Id and User Name |
+| Checklist\_tbl | Holds the Task Id and the Checklist item(s) |
 
 Each table is updated as part of the Flow. The following steps are applied in each section.
 
