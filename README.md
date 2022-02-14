@@ -51,8 +51,11 @@ You will need to ensure you configure and select connections for the following r
 | Planner Connection |
 | Office 365 Groups Connection |
 
-If get the following error then you have more configuration to perform.
+
+If get the following error when you import the flow then you have more configuration to perform.
+
 ![parameters](https://user-images.githubusercontent.com/37085234/153899782-3cc6a372-07ec-4bdb-bf30-dc0f3a8ab6ff.png)
+
 
 Please see this video on YouTub to walk you through the solution - https://www.youtube.com/watch?v=oWyDJmDDFfU 
 
