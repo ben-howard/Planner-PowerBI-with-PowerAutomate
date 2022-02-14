@@ -51,6 +51,11 @@ You will need to ensure you configure and select connections for the following r
 | Planner Connection |
 | Office 365 Groups Connection |
 
+If get the following error then you have more configuration to perform.
+![parameters](https://user-images.githubusercontent.com/37085234/153899782-3cc6a372-07ec-4bdb-bf30-dc0f3a8ab6ff.png)
+
+Please see this video on YouTub to walk you through the solution - https://www.youtube.com/watch?v=oWyDJmDDFfU 
+
 ### Update the flow to point to the SharePoint document library
 
 The Flow has 6 major sections to it. They comprise of sections to update the following tables in the Excel file, and each section is broadly similar.
@@ -64,7 +69,7 @@ The Flow has 6 major sections to it. They comprise of sections to update the fol
 | User\_tbl | Holds the User Id and User Name |
 | Checklist\_tbl | Holds the Task Id and the Checklist item(s) |
 
-Each table is updated as part of the Flow. The following steps are applied in each section.
+Each table is updated as part of the Flow. The following steps are applied in each section
 
 1. Every row in the current table is deleted
 2. A list of Plans is retrieved for each group associated with each team in Microsoft Teams
