@@ -59,6 +59,8 @@ If get the following error when you import the flow then you have more configura
 
 Please see this video on YouTub to walk you through the solution - https://www.youtube.com/watch?v=oWyDJmDDFfU 
 
+Alternatively please review the flow map.pdf file included in the repository to manually create the flow.
+
 ### Update the flow to point to the SharePoint document library
 
 The Flow has 6 major sections to it. They comprise of sections to update the following tables in the Excel file, and each section is broadly similar.
