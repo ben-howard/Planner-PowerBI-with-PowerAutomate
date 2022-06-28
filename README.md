@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between Planner and Power BI.  You can watch the youtube video of it at https://youtu.be/-U1Nnj95VMo
+This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between Planner and Power BI.  The flow has been updated a couple of times and so you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
 
 The following files are included in this github
 
