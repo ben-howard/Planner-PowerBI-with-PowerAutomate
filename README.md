@@ -11,6 +11,7 @@ The following files are included in this github
 1. An exported Flow package that copies the Planner data into an Excel file.
 2. An Excel file that holds the Planner data.
 3. A Power BI template (.pbit) file that visualizes the Planner data.
+4. The 6 office scripts (.osts) files that are used to empty the tables.
 
 ## Deployment Overview
 
@@ -19,7 +20,7 @@ The following outlines the deployment and configuration process to deploying the
 1. Associate each Plan with a Team in Microsoft Teams
 2. Upload the Excel file into a SharePoint document library
 3. Import the Flow package into Power Automate
-4. Update the flow to point to the SharePoint document library
+4. Update the flow to point to the SharePoint document library & add the scripts to the automate tab in Excel online.
   1. Test, test, test, until the flow runs successfully!!
 5. Open the .pbit file and enter the web URL of the Excel file
 
@@ -38,6 +39,9 @@ _Figure 2 - Create a new Plan against and existing Group_
 
 Upload the Excel file into a SharePoint folder. It doesn&#39;t matter what the folder or file name is, but make sure you remember where you have saved the file as this will need to be entered multiple times in the Flow. Please leave the table names the same, as Power BI uses hard coded table names as part of the query.
 
+### Update the Excel file with the scripts.
+Ensure you can access the scripts in Excel.  You can either type them in from the .osts file, or save the .osts files in your onedrive, under documents > office scripts.  The scripts must be associated with the Excel file.
+
 ### Import the Flow into Power Automate
 
 Open Power Automate and import the Flow package. The Flow is a cloud flow that is set to run each night at 11:00pm.
@@ -51,6 +55,7 @@ You will need to ensure you configure and select connections for the following r
 | Planner Connection |
 | Office 365 Groups Connection |
 
+If you cannot see a relevant connection, then open the Data > Connections tab, and click the button to add a new connection at the top of the page.
 
 If get the following error when you import the flow then you have more configuration to perform.
 
@@ -76,7 +81,7 @@ The Flow has 6 major sections to it. They comprise of sections to update the fol
 
 Each table is updated as part of the Flow. The following steps are applied in each section
 
-1. Every row in the current table is deleted
+1. Every row in the current table is deleted (via the office scripts)
 2. A list of Plans is retrieved for each group associated with each team in Microsoft Teams
 3. The relevant data for each plan is written into the relevant table, with the exception of the User\_tbl which lists the group members for each group, and therefore does not query Planner at all.
 
