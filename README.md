@@ -20,9 +20,10 @@ The following outlines the deployment and configuration process to deploying the
 1. Associate each Plan with a Team in Microsoft Teams
 2. Upload the Excel file into a SharePoint document library
 3. Import the Flow package into Power Automate
-4. Update the flow to point to the SharePoint document library & add the scripts to the automate tab in Excel online.
+4. Add the scripts to the automate tab in Excel online, and test that they work
+5. Update the flow to point to the SharePoint document library.
   1. Test, test, test, until the flow runs successfully!!
-5. Open the .pbit file and enter the web URL of the Excel file
+6. Open the .pbit file and enter the web URL of the Excel file
 
 ## Associate each Plan with a Team in Microsoft Teams.
 
@@ -108,4 +109,4 @@ Open the .pbit file and enter the web URL of the Excel file. This can be found b
 
 https://tenantname/sitename/foldername/filename.xlsx
 
-Publish the Power BI file and then set up a scheduled refresh on the dataset. My recommendation is to set this to run two hours after the schedule for the Power Automate Flow, especially if you have a large number of tasks.  The default time for the Flow is 11:00pm, so I recommend setting the Power BI Scheduled Refresh to 1:00am.
+Publish the Power BI file and then set up a scheduled refresh on the dataset. My recommendation is to set this to run two hours after the schedule for the Power Automate Flow, especially if you have a large number of tasks.  The default time for the Flow is 11:00pm, so I recommend setting the Power BI Scheduled Refresh to 1:00am, or of course, you could modify the flow to refresh the Power BI file as the final step.
