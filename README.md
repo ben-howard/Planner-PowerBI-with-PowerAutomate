@@ -6,16 +6,22 @@
 
 This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between Planner and Power BI.  The flow has been updated a couple of times and so you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
 
+The repository contains two versions of the PowerAutomate flow.  
+The original flow is available in this zip - ExportPlannertaskstoExcel-original.zip and the flow map is shown in Flow map.pdf if you need to build it from scratch.
+The latest flow is avaiable in this zip - ExportPlannertaskstoExcel.zip and the flow map is shown in the Flow Map with Office Scripts.pdf.  As suggested, this flow also uses the Office Scripts.zip file which contains the office scripts used to delete rows from the tables.  Anecdotally the flow with Office Scripts is more stable and runs faster.
+
+The Excel file and .pbit file remain the same regardless of which flow you use. 
+
 The following files are included in this github
 
 1. An exported Flow package that copies the Planner data into an Excel file.
 2. An Excel file that holds the Planner data.
 3. A Power BI template (.pbit) file that visualizes the Planner data.
-4. The 6 office scripts (.osts) files that are used to empty the tables.
+4. The 6 office scripts (.osts) files that are used to empty the tables (latest version only).
 
 ## Deployment Overview
 
-The following outlines the deployment and configuration process to deploying the solution. A full YouTube video detailing the deployment process can be found here.
+The following outlines the deployment and configuration process to deploying the solution, and assumes you are using the flow with Office Scripts.
 
 1. Associate each Plan with a Team in Microsoft Teams
 2. Upload the Excel file into a SharePoint document library
