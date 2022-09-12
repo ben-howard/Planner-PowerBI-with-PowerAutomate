@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between Planner and Power BI.  The flow has been updated a couple of times and so you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
+This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between all Planner plans and Power BI.  The flow has been updated a couple of times and so you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
 
 The repository contains two versions of the PowerAutomate flow.  
 The original flow is available in this zip - ExportPlannertaskstoExcel-original.zip and the flow map is shown in Flow map.pdf if you need to build it from scratch.
@@ -17,7 +17,7 @@ The following files are included in this github
 1. An exported Flow package that copies the Planner data into an Excel file.
 2. An Excel file that holds the Planner data.
 3. A Power BI template (.pbit) file that visualizes the Planner data.
-4. The 6 office scripts (.osts) files that are used to empty the tables (latest version only).
+4. The 6 office script files that are used to empty the tables (latest version only).
 
 ## Deployment Overview
 
@@ -47,7 +47,7 @@ _Figure 2 - Create a new Plan against and existing Group_
 Upload the Excel file into a SharePoint folder. It doesn&#39;t matter what the folder or file name is, but make sure you remember where you have saved the file as this will need to be entered multiple times in the Flow. Please leave the table names the same, as Power BI uses hard coded table names as part of the query.
 
 ### Update the Excel file with the scripts.
-Ensure you can access the scripts in Excel.  You can either type them in from the .osts file, or save the .osts files in your onedrive, under documents > office scripts.  The scripts must be associated with the Excel file.
+Create 6 new scripts against the Excel file by copying and pasting the code from each script file into the scripts code editor in Excel.
 
 ### Import the Flow into Power Automate
 
@@ -68,10 +68,9 @@ If get the following error when you import the flow then you have more configura
 
 ![parameters](https://user-images.githubusercontent.com/37085234/153899782-3cc6a372-07ec-4bdb-bf30-dc0f3a8ab6ff.png)
 
-
 Please see this video on YouTub to walk you through the solution - https://www.youtube.com/watch?v=oWyDJmDDFfU 
 
-Alternatively please review the flow map.pdf file included in the repository to manually create the flow.
+Alternatively please review the relevant flow map.pdf file included in the repository to manually create the flow.
 
 ### Update the flow to point to the SharePoint document library
 
