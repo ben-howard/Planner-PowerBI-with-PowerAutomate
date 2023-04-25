@@ -1,9 +1,0 @@
-function main(workbook: ExcelScript.Workbook) {
-    //Get tables
-    let tables = workbook.getTables();
-    //Delete all rows in all tables
-    tables.forEach(table => {
-        let numberOfRows = table.getRowCount();
-        if (numberOfRows > 0) table.getRangeBetweenHeaderAndTotal().delete(0);
-    })
-}
