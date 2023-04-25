@@ -6,11 +6,15 @@
 
 This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between all Planner plans and Power BI.  The orgininal flow has been amended several times, for an overivew of the whole process you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
 
-The repository contains four versions of the PowerAutomate flow.  
-The original flow (as per the youtube videos reference above) and is available in the **Parallel with no Office Scripts** folder.  
-The next modification was to use Office Scripts and this is available in the **Parallel with Office Scripts** folder - https://youtu.be/82aYZBKiwoA . Anecdotally the flow with Office Scripts is more stable and runs faster.
-The folder called **Sequential** is modification of the Office Scripts flow, however it consists of just a single branch in the flow.  Some people have found that this is the fastest flow, but on my system this is inconclusive.
-The folder called **Single Team** allows you to just sync Planner tasks for a single Office Team.  It is based on the **Parallel with Office Scripts** flow.
+The repository contains **four** versions of the PowerAutomate flow.  
+
+1. The original flow (as per the youtube videos reference above) and is available in the **Parallel with no Office Scripts** folder.  
+
+2. The next modification was to use Office Scripts and this is available in the **Parallel with Office Scripts** folder - https://youtu.be/82aYZBKiwoA . Anecdotally the flow with Office Scripts is more stable and runs faster.
+
+3. The folder called **Sequential** is modification of the Office Scripts flow, however it consists of just a single branch in the flow.  Some people have found that this is the fastest flow, but on my system this is inconclusive.
+
+4. The folder called **Single Team** allows you to just sync Planner tasks for a single Office Team.  It is based on the **Parallel with Office Scripts** flow.
 
 The following files are included in each folder 
 
