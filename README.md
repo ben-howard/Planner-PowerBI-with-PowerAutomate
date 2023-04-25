@@ -4,20 +4,21 @@
 
 ## Introduction
 
-This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between all Planner plans and Power BI.  The flow has been updated a couple of times and so you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
+This repository contains files and information required to sync the tasks from Microsoft Planner to an Excel file stored in SharePoint, which can then be read by Power BI; so in simple terms it provides an automatic sync between all Planner plans and Power BI.  The orgininal flow has been amended several times, for an overivew of the whole process you need to watch both the original video @ https://youtu.be/-U1Nnj95VMo and then follow it up with https://youtu.be/82aYZBKiwoA
 
-The repository contains two versions of the PowerAutomate flow.  
-The original flow is available in this zip - ExportPlannertaskstoExcel-original.zip and the flow map is shown in Flow map.pdf if you need to build it from scratch.
-The latest flow is avaiable in this zip - ExportPlannertaskstoExcel.zip and the flow map is shown in the Flow Map with Office Scripts.pdf.  As suggested, this flow also uses the Office Scripts.zip file which contains the office scripts used to delete rows from the tables.  Anecdotally the flow with Office Scripts is more stable and runs faster.
+The repository contains four versions of the PowerAutomate flow.  
+The original flow (as per the youtube videos reference above) and is available in the "Parallel with no Office Scripts" folder.  
+The next modification was to use Office Scripts and this is available in the "Parallel with Office Scripts" folder - https://youtu.be/82aYZBKiwoA . Anecdotally the flow with Office Scripts is more stable and runs faster.
+The folder called "Sequential" is modification of the Office Scripts flow, however it consists of just a single branch in the flow.  Some people have found that this is the fastest flow, but on my system this is inconclusive.
+The folder called "Single Team" allows you to just sync Planner tasks for a single Office Team.  It is based on the "Parallel with Office Scripts" flow.
 
-The Excel file and .pbit file remain the same regardless of which flow you use. 
-
-The following files are included in this github
+The following files are included in each folder 
 
 1. An exported Flow package that copies the Planner data into an Excel file.
 2. An Excel file that holds the Planner data.
 3. A Power BI template (.pbit) file that visualizes the Planner data.
-4. The 6 office script files that are used to empty the tables (latest version only).
+4. The office script files that are used to empty the tables in Excel (if necessary)
+5. A "map" of the flow as documentation.
 
 ## Deployment Overview
 
@@ -26,14 +27,14 @@ The following outlines the deployment and configuration process to deploying the
 1. Associate each Plan with a Team in Microsoft Teams
 2. Upload the Excel file into a SharePoint document library
 3. Import the Flow package into Power Automate
-4. Add the scripts to the automate tab in Excel online, and test that they work
+4. Add the scripts to the automate tab in Excel online, and test that they work (assuming you are using one of the flows that needs an Office Script)
 5. Update the flow to point to the SharePoint document library.
   1. Test, test, test, until the flow runs successfully!!
 6. Open the .pbit file and enter the web URL of the Excel file
 
 ## Associate each Plan with a Team in Microsoft Teams.
 
-Power Automate queries every Team in turn and returns the Planner plans associated with the Team; therefore if no Team exists for a Plan then a Team must be created and associated with the existing Office365 group that was created as part of the Plan creation. If a team already exists, and the Plan is being created, associate the Plan with the relevant team.
+PowerAutomate queries every Team in turn and returns the Planner plans associated with the Team; therefore if no Team exists for a Plan then a Team must be created and associated with the existing Office365 group that was created as part of the Plan creation. If a team already exists, and the Plan is being created, associate the Plan with the relevant team.
 
 ![2021-10-10_20-27-16](https://user-images.githubusercontent.com/37085234/136714533-f194727f-a55a-4d4a-969a-7233b7afabe3.png)
 
