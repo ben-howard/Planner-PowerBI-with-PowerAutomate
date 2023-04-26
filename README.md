@@ -19,10 +19,12 @@ The repository contains **four** versions of the PowerAutomate flow.
 The following files are included in each folder 
 
 1. An exported Flow package that copies the Planner data into an Excel file.
-2. An Excel file that holds the Planner data.
-3. A Power BI template (.pbit) file that visualizes the Planner data.
-4. The office script files that are used to empty the tables in Excel (if necessary)
-5. A "map" of the flow as documentation.
+2. The office script files that are used to empty the tables in Excel (if necessary)
+3. A "map" of the flow as documentation.
+
+Additionally, the following two files are common across all of the flows
+1. An Excel file that holds the Planner data.
+2. A Power BI template (.pbit) file that visualizes the Planner data.
 
 ## Deployment Overview
 
