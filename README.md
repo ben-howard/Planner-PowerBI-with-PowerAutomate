@@ -1,5 +1,5 @@
 # Planner-PowerBI-with-PowerAutomate
-
+*** Jan 2024 - IMPORTANT - due to a change in the flow import UI you MUST add the following parameter onto the URL /?v3=false during the import. ***
 # Synching Planner Plans to Power BI using Power Automate
 
 ## Introduction
@@ -32,7 +32,7 @@ The following outlines the deployment and configuration process to deploying the
 
 1. Associate each Plan with a Team in Microsoft Teams
 2. Upload the Excel file into a SharePoint document library
-3. Import the Flow package into Power Automate
+3. Import the Flow package into Power Automate  *** Jan 2024 - IMPORTANT - due to a change in the flow import UI you MUST add the following parameter onto the URL /?v3=false during the import. ***
 4. Add the scripts to the automate tab in Excel online, and test that they work (assuming you are using one of the flows that needs an Office Script)
 5. Update the flow to point to the SharePoint document library.
   1. Test, test, test, until the flow runs successfully!!
