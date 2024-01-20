@@ -1,5 +1,5 @@
 # Planner-PowerBI-with-PowerAutomate
-*** Jan 2024 - IMPORTANT - due to a change in the flow import UI you MUST add the following parameter onto the URL ?v3=false during the import. ***
+*** Jan 2024 - IMPORTANT - due to a change in the flow import UI you MUST add the following parameter onto the URL **?v3=false** during the import. ***
 # Synching Planner Plans to Power BI using Power Automate
 
 ## Introduction
